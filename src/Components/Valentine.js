@@ -15,7 +15,12 @@ export default function Valentine() {
     'Last chance',
     'Surely not?',
     'You might regret this',
-    ':(',
+    'Have a hearth !',
+    'Dont be so cold !',
+    'I will keep asking',
+    'I will keep asking',
+    'is that your final answer?',
+    'you are breaking my heart :(',
   ];
 
   const handlePlaySound = () => {
