@@ -15,7 +15,7 @@ export default function Valentine() {
     'Last chance',
     'Surely not?',
     'You might regret this',
-    'Have a hearth !',
+    'Have a hearth ?',
     'Dont be so cold !',
     'I will keep asking',
     'I WILL KEEP ASKING',
