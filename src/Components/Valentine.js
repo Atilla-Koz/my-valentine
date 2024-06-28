@@ -18,7 +18,7 @@ export default function Valentine() {
     'Have a hearth !',
     'Dont be so cold !',
     'I will keep asking',
-    'I will keep asking',
+    'I WILL KEEP ASKING',
     'is that your final answer?',
     'you are breaking my heart :(',
   ];
@@ -44,9 +44,9 @@ export default function Valentine() {
         <div className="flex flex-col items-center gap-8">
           <button
             onClick={handlePlaySound}
-            className="bg-pink-500 text-white px-8 py-4 rounded"
+            className="bg-pink-500 text-white px-16 py-4 rounded"
           >
-            Start
+            Atilla has a question for you.
           </button>
         </div>
       )}
