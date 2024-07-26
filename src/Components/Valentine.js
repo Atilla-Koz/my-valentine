@@ -6,7 +6,7 @@ export default function Valentine() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [noButtonTextIndex, setNoButtonTextIndex] = useState(0);
   const [isAccepted, setIsAccepted] = useState(false);
-  const [yesButtonSize, setYesButtonSize] = useState(1); // Yeni durum
+  const [yesButtonSize, setYesButtonSize] = useState(1);
 
   const noButtonTexts = [
     'No',
@@ -22,6 +22,7 @@ export default function Valentine() {
     'I WILL KEEP ASKING',
     'is that your final answer?',
     'you are breaking my heart :(',
+    'but...',
   ];
 
   const handlePlaySound = () => {
@@ -37,11 +38,11 @@ export default function Valentine() {
 
   const handleNoButtonClick = () => {
     setNoButtonTextIndex((prevIndex) => prevIndex + 1);
-    setYesButtonSize((prevSize) => prevSize + 0.1); // Yeşil butonun boyutunu artır
+    setYesButtonSize((prevSize) => prevSize + 0.2);
   };
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen gap-16">
+    <section className="flex flex-col items-center justify-center min-h-screen gap-24">
       {!isPlaying && (
         <div className="flex flex-col items-center gap-8">
           <button
@@ -61,11 +62,11 @@ export default function Valentine() {
             />
             <h1 className="text-[2rem]">Will You Be My Valentine?</h1>
           </div>
-          <div className="flex flex-row gap-8">
+          <div className="flex flex-row gap-24">
             <button
               onClick={handleYesButtonClick}
               className="bg-green-500 text-white px-8 py-4 rounded"
-              style={{ transform: `scale(${yesButtonSize})` }} // Yeşil butonun boyutunu ayarla
+              style={{ transform: `scale(${yesButtonSize})` }}
             >
               Yes!
             </button>
