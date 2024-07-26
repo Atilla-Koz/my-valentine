@@ -6,6 +6,7 @@ export default function Valentine() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [noButtonTextIndex, setNoButtonTextIndex] = useState(0);
   const [isAccepted, setIsAccepted] = useState(false);
+  const [yesButtonSize, setYesButtonSize] = useState(1); // Yeni durum
 
   const noButtonTexts = [
     'No',
@@ -36,6 +37,7 @@ export default function Valentine() {
 
   const handleNoButtonClick = () => {
     setNoButtonTextIndex((prevIndex) => prevIndex + 1);
+    setYesButtonSize((prevSize) => prevSize + 0.1); // Yeşil butonun boyutunu artır
   };
 
   return (
@@ -63,6 +65,7 @@ export default function Valentine() {
             <button
               onClick={handleYesButtonClick}
               className="bg-green-500 text-white px-8 py-4 rounded"
+              style={{ transform: `scale(${yesButtonSize})` }} // Yeşil butonun boyutunu ayarla
             >
               Yes!
             </button>
