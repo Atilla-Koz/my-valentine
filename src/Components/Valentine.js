@@ -59,7 +59,7 @@ export default function Valentine() {
         <div className="flex flex-col items-center gap-8">
           <button
             onClick={handlePlaySound}
-            className="bg-pink-500 text-white px-16 py-4 rounded"
+            className="bg-[rgba(255,255,255,0.5)] text-black px-16 py-4 rounded"
           >
             The crows brought you a question from Atilla, Ilayda.
           </button>
@@ -72,14 +72,14 @@ export default function Valentine() {
               src="https://media.tenor.com/ZhNxfL0GmoMAAAAi/mocha-bear-hearts.gif"
               alt="Mocha bear hearts"
             />
-            <h1 className="text-[2rem] text-[white]">
+            <h1 className="text-[2rem] text-[rgba(255,255,255,0.5)]">
               Will You Be My Valentine?
             </h1>
           </div>
           <div className="flex flex-row gap-24">
             <button
               onClick={handleYesButtonClick}
-              className="bg-green-500 text-white px-8 py-4 rounded"
+              className="bg-[rgba(0,128,0,0.5)] text-white px-8 py-4 rounded"
               style={{ transform: `scale(${state.yesButtonSize})` }}
             >
               Yes!
@@ -87,7 +87,7 @@ export default function Valentine() {
             {state.noButtonTextIndex < noButtonTexts.length ? (
               <button
                 onClick={handleNoButtonClick}
-                className="bg-red-500 text-white px-8 py-4 rounded"
+                className="bg-[rgba(255,0,0,0.5)] text-white px-8 py-4 rounded"
               >
                 {noButtonTexts[state.noButtonTextIndex]}
               </button>
@@ -101,7 +101,9 @@ export default function Valentine() {
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
             alt="Kissing bear"
           />
-          <h1 className="text-[5rem] text-[white]">Ok Yay !!!</h1>
+          <h1 className="text-[5rem] text-[rgba(255,255,255,0.5)]">
+            Ok Yay !!!
+          </h1>
         </div>
       )}
       <audio ref={audioRef} src={Sound} />
