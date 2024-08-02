@@ -72,7 +72,7 @@ export default function Valentine() {
               src="https://media.tenor.com/ZhNxfL0GmoMAAAAi/mocha-bear-hearts.gif"
               alt="Mocha bear hearts"
             />
-            <h1 className="text-[2rem] text-[rgba(255,255,255,0.5)]">
+            <h1 className="text-[2rem] text-[rgba(255,255,255,0.8)]">
               Will You Be My Valentine?
             </h1>
           </div>
@@ -101,7 +101,7 @@ export default function Valentine() {
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
             alt="Kissing bear"
           />
-          <h1 className="text-[5rem] text-[rgba(255,255,255,0.5)]">
+          <h1 className="text-[5rem] text-[rgba(255,255,255,0.8)]">
             Ok Yay !!!
           </h1>
         </div>
