@@ -13,7 +13,7 @@ export default function Valentine() {
 
   const noButtonTexts = [
     'No',
-    'Are you sure?',
+    'Are you sure, Ilayda?',
     'Really Sure?',
     'Think again',
     'Last chance',
@@ -25,7 +25,8 @@ export default function Valentine() {
     'I WILL KEEP ASKING',
     'Is that your final answer?',
     'You are breaking my heart :(',
-    'But...',
+    'But... Ilayda...',
+    'Ilayda, tıpkı kargaların bizim için taşıdığı hikayeler gibi, kalbim de sana fısıldıyor: yanımda olmanı istiyorum.',
   ];
 
   const handlePlaySound = () => {
