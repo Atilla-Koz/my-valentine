@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         crow: "url('/src/assets/Crows/crow.webp')",
         crow1: "url('/src/assets/Crows/crow1.webp')",
+        crow4: "url('/src/assets/Crows/crow4.webp')",
       },
     },
   },

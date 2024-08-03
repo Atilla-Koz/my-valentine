@@ -42,7 +42,11 @@ export default function Valentine() {
   };
 
   const handleYesButtonClick = () => {
-    setState((prevState) => ({ ...prevState, isAccepted: true }));
+    setState((prevState) => ({
+      ...prevState,
+      isAccepted: true,
+      backgroundClass: 'bg-crow4',
+    }));
   };
 
   const handleNoButtonClick = () => {

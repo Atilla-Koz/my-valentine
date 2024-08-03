@@ -6,7 +6,12 @@ import crow from '../assets/Crows/crow.webp';
 import crow1 from '../assets/Crows/crow1.webp';
 import crow2 from '../assets/Crows/crow2.webp';
 import crow3 from '../assets/Crows/crow3.webp';
+import crow4 from '../assets/Crows/crow4.webp';
+import crow5 from '../assets/Crows/crow5.webp';
+import crow6 from '../assets/Crows/crow6.webp';
+import crow7 from '../assets/Crows/crow7.webp';
 import Sound from '../assets/yelken.mp3';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function MyValentine() {
   const audioRef = useRef(null);
@@ -29,12 +34,20 @@ export default function MyValentine() {
 
   return (
     <section className="h-screen w-full flex flex-col items-center justify-center bg-black">
-      <button
-        onClick={handlePlaySound}
-        className="bg-[rgba(255,255,255,0.5)] text-black px-16 py-2 rounded m-8"
-      >
-        <h1 className="">Play</h1>
-      </button>
+      <div className="flex flex-row">
+        <button
+          onClick={handlePlaySound}
+          className="bg-[rgba(255,255,255,0.5)] text-black px-16 py-2 rounded m-8"
+        >
+          <h1 className="">Play</h1>
+        </button>
+        <button className="bg-[rgba(255,255,255,0.5)] text-black px-16 py-2 rounded m-8">
+          <Link to="/">
+            {' '}
+            <h1 className="">Back</h1>
+          </Link>
+        </button>
+      </div>
       <audio ref={audioRef} src={Sound}></audio>
       <Slider {...settings} className="w-3/4">
         <div className="px-2">
@@ -48,6 +61,11 @@ export default function MyValentine() {
           </a>
         </div>
         <div className="px-2">
+          <a href={crow4} target="_blank" rel="noopener noreferrer">
+            <img src={crow4} className="cursor-pointer w-full" alt="crow3" />
+          </a>
+        </div>
+        <div className="px-2">
           <a href={crow2} target="_blank" rel="noopener noreferrer">
             <img src={crow2} className="cursor-pointer w-full" alt="crow2" />
           </a>
@@ -55,6 +73,21 @@ export default function MyValentine() {
         <div className="px-2">
           <a href={crow3} target="_blank" rel="noopener noreferrer">
             <img src={crow3} className="cursor-pointer w-full" alt="crow3" />
+          </a>
+        </div>
+        <div className="px-2">
+          <a href={crow5} target="_blank" rel="noopener noreferrer">
+            <img src={crow5} className="cursor-pointer w-full" alt="crow5" />
+          </a>
+        </div>
+        <div className="px-2">
+          <a href={crow6} target="_blank" rel="noopener noreferrer">
+            <img src={crow6} className="cursor-pointer w-full" alt="crow6" />
+          </a>
+        </div>
+        <div className="px-2">
+          <a href={crow7} target="_blank" rel="noopener noreferrer">
+            <img src={crow7} className="cursor-pointer w-full" alt="crow7" />
           </a>
         </div>
       </Slider>
