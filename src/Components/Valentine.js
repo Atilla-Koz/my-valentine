@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Sound from '../assets/yelken.mp3';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function Valentine() {
   const audioRef = useRef(null);
@@ -102,9 +103,12 @@ export default function Valentine() {
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
             alt="Kissing bear"
           />
-          <h1 className="text-[5rem] text-[rgba(255,255,255,0.8)]">
-            Ok Yay !!!
-          </h1>
+          <Link to="/my-valentine">
+            {' '}
+            <h1 className="text-[5rem] text-[rgba(255,255,255,0.8)]">
+              Ok Yay !!!
+            </h1>
+          </Link>
         </div>
       )}
       <audio ref={audioRef} src={Sound} />
