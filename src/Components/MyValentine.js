@@ -34,6 +34,12 @@ export default function MyValentine() {
 
   return (
     <section className="h-screen w-full flex flex-col items-center justify-center bg-black">
+      <p className="text-white text-wrap mr-8 ml-8">
+        Şairin de dediği gib:"Belki doğru belki yanlıs bir referans noktasıdır
+        ben de bilemiyorum ancak bence senin düsünebildiğin, benim
+        düsünebildiğim tüm ihtimaller de cok keyifli… en azından ‘bütün
+        ihtimallerden’ daha keyifli :)"
+      </p>
       <div className="flex flex-row">
         <button
           onClick={handlePlaySound}
